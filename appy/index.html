@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    >
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@3.4.3/src/css/preflight.css"
+    >
+    <link
+      href="./main.css"
+      rel="stylesheet"
+      type="text/css"
+    >
+
+    <title>Appy</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div id="topBarNavigation">
+          <a
+            id="logo"
+            href="/"
+          >
+            Appy
+          </a>
+
+          <button
+            id="navigationToggle"
+            type="button"
+            aria-labelledby="mainNavigation"
+            aria-expanded="false"
+            aria-controls="navigation"
+          >
+            <svg
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+
+            <span class="sr-only">Open Menu</span>
+          </button>
+        </div>
+
+        <div
+          id="mainNavigation"
+          hidden
+        >
+          <nav>
+            <ul>
+              <li>
+                <a
+                  class="active"
+                  href="#"
+                >Products</a>
+              </li>
+              <li><a href="#">Business Solutions</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </nav>
+
+          <div id="mainNavigationCTA">
+            <a href="#">Log In</a>
+            <a href="#">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-information">
+            <h1 class="hero-title">
+              Building apps just got easier
+            </h1>
+            <p>
+              Appy is a platform that allows you to build, manage and deploy your apps in one place.
+            </p>
+
+            <div class="hero-cta">
+              <a
+                href="#"
+                class="button"
+              >Get Started</a>
+              <a
+                href="#"
+                class="button"
+              >
+                <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.23445 21.5594C5.94665 21.5589 5.66394 21.4834 5.41414 21.3405C4.85164 21.0217 4.50195 20.403 4.50195 19.7313V6.13752C4.50195 5.46393 4.85164 4.84705 5.41414 4.5283C5.66989 4.38132 5.96043 4.30573 6.25539 4.30944C6.55034 4.31315 6.83889 4.39602 7.09086 4.54939L18.7088 11.5038C18.951 11.6556 19.1506 11.8664 19.2889 12.1165C19.4273 12.3666 19.4999 12.6477 19.4999 12.9335C19.4999 13.2192 19.4273 13.5004 19.2889 13.7504C19.1506 14.0005 18.951 14.2113 18.7088 14.3631L7.08898 21.3194C6.83112 21.4753 6.53577 21.5582 6.23445 21.5594Z"
+                    fill="#2563EB"
+                  />
+                </svg>
+                Watch Video
+              </a>
+            </div>
+          </div>
+
+          <picture>
+            <source
+              srcset="./images/hero-phone.png"
+              type="image/png"
+              media="(min-width: 768px)"
+            >
+            <img
+              src="./images/hero-phone-mobile.png"
+              alt="Phone with Appy app"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="features">
+        <div class="container">
+          <div class="feature-item">
+            <svg
+              class="mx-auto"
+              width="106"
+              height="106"
+              viewBox="0 0 106 106"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="9.83301"
+                y="10.3688"
+                width="95"
+                height="95"
+                rx="47.5"
+                fill="#EF4444"
+              />
+              <rect
+                x="9.83301"
+                y="10.3688"
+                width="95"
+                height="95"
+                rx="47.5"
+                stroke="#EF4444"
+              />
+              <path
+                d="M71.333 37.8688H43.333C42.8026 37.8688 42.2939 37.6581 41.9188 37.283C41.5437 36.9079 41.333 36.3992 41.333 35.8688C41.333 35.3383 41.5437 34.8296 41.9188 34.4546C42.2939 34.0795 42.8026 33.8688 43.333 33.8688H71.333C71.8634 33.8688 72.3722 34.0795 72.7472 34.4546C73.1223 34.8296 73.333 35.3383 73.333 35.8688C73.333 36.3992 73.1223 36.9079 72.7472 37.283C72.3722 37.6581 71.8634 37.8688 71.333 37.8688Z"
+                fill="white"
+              />
+              <path
+                d="M75.333 43.8688H39.333C38.8026 43.8688 38.2939 43.6581 37.9188 43.283C37.5437 42.9079 37.333 42.3992 37.333 41.8688C37.333 41.3383 37.5437 40.8296 37.9188 40.4546C38.2939 40.0795 38.8026 39.8688 39.333 39.8688H75.333C75.8634 39.8688 76.3722 40.0795 76.7472 40.4546C77.1223 40.8296 77.333 41.3383 77.333 41.8688C77.333 42.3992 77.1223 42.9079 76.7472 43.283C76.3722 43.6581 75.8634 43.8688 75.333 43.8688Z"
+                fill="white"
+              />
+              <path
+                d="M77.7243 81.8688H36.9418C35.4547 81.8671 34.0291 81.2757 32.9776 80.2242C31.9261 79.1727 31.3347 77.7471 31.333 76.26V51.4775C31.3347 49.9905 31.9261 48.5649 32.9776 47.5134C34.0291 46.4619 35.4547 45.8704 36.9418 45.8688H77.7243C79.2113 45.8704 80.6369 46.4619 81.6884 47.5134C82.7399 48.5649 83.3314 49.9905 83.333 51.4775V76.26C83.3314 77.7471 82.7399 79.1727 81.6884 80.2242C80.6369 81.2757 79.2113 81.8671 77.7243 81.8688V81.8688Z"
+                fill="white"
+              />
+              <rect
+                x="1.33301"
+                y="1.86877"
+                width="102"
+                height="102"
+                rx="51"
+                stroke="#EF4444"
+                stroke-width="2"
+                stroke-dasharray="8 4"
+              />
+            </svg>
+            <h2 class="feature-title">Fermentum amet</h2>
+            <p class="feature-text">
+              Pellentesque quis tincidunt sit sed. Tortor massa sed habitant dignissim senectus purus. Consectetur
+              integer id in et
+              pulvinar interdum id.
+            </p>
+          </div>
+
+          <div class="feature-item">
+            <svg
+              class="mx-auto"
+              width="104"
+              height="106"
+              viewBox="0 0 104 106"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.5"
+                y="10.3688"
+                width="95"
+                height="95"
+                rx="47.5"
+                fill="#EAB308"
+              />
+              <rect
+                x="0.5"
+                y="10.3688"
+                width="95"
+                height="95"
+                rx="47.5"
+                stroke="#EAB308"
+              />
+              <path
+                d="M62 37.8688H34C33.4696 37.8688 32.9609 37.6581 32.5858 37.283C32.2107 36.9079 32 36.3992 32 35.8688C32 35.3383 32.2107 34.8296 32.5858 34.4546C32.9609 34.0795 33.4696 33.8688 34 33.8688H62C62.5304 33.8688 63.0391 34.0795 63.4142 34.4546C63.7893 34.8296 64 35.3383 64 35.8688C64 36.3992 63.7893 36.9079 63.4142 37.283C63.0391 37.6581 62.5304 37.8688 62 37.8688Z"
+                fill="white"
+              />
+              <path
+                d="M66 43.8688H30C29.4696 43.8688 28.9609 43.6581 28.5858 43.283C28.2107 42.9079 28 42.3992 28 41.8688C28 41.3383 28.2107 40.8296 28.5858 40.4546C28.9609 40.0795 29.4696 39.8688 30 39.8688H66C66.5304 39.8688 67.0391 40.0795 67.4142 40.4546C67.7893 40.8296 68 41.3383 68 41.8688C68 42.3992 67.7893 42.9079 67.4142 43.283C67.0391 43.6581 66.5304 43.8688 66 43.8688Z"
+                fill="white"
+              />
+              <path
+                d="M68.3913 81.8688H27.6088C26.1217 81.8671 24.6961 81.2757 23.6446 80.2242C22.5931 79.1727 22.0017 77.7471 22 76.26V51.4775C22.0017 49.9905 22.5931 48.5649 23.6446 47.5134C24.6961 46.4619 26.1217 45.8704 27.6088 45.8688H68.3913C69.8783 45.8704 71.3039 46.4619 72.3554 47.5134C73.4069 48.5649 73.9983 49.9905 74 51.4775V76.26C73.9983 77.7471 73.4069 79.1727 72.3554 80.2242C71.3039 81.2757 69.8783 81.8671 68.3913 81.8688V81.8688Z"
+                fill="white"
+              />
+              <rect
+                x="1"
+                y="1.86877"
+                width="102"
+                height="102"
+                rx="51"
+                stroke="#EAB308"
+                stroke-width="2"
+                stroke-dasharray="8 4"
+              />
+            </svg>
+            <h2 class="feature-title">Dignissim quam</h2>
+            <p class="feature-text">
+              Quam sed neque vitae viverra purus venenatis ac non. Eget sed nunc, amet, nibh nulla. Morbi sed risus
+              ullamcorper diam,
+              elit ut non.
+            </p>
+          </div>
+
+          <div class="feature-item">
+            <svg
+              class="mx-auto"
+              width="106"
+              height="106"
+              viewBox="0 0 106 106"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="1.16602"
+                y="1.36877"
+                width="95"
+                height="95"
+                rx="47.5"
+                fill="#2563EB"
+              />
+              <rect
+                x="1.16602"
+                y="1.36877"
+                width="95"
+                height="95"
+                rx="47.5"
+                stroke="#2563EB"
+              />
+              <path
+                d="M62.666 28.8688H34.666C34.1356 28.8688 33.6269 28.6581 33.2518 28.283C32.8767 27.9079 32.666 27.3992 32.666 26.8688C32.666 26.3383 32.8767 25.8296 33.2518 25.4546C33.6269 25.0795 34.1356 24.8688 34.666 24.8688H62.666C63.1964 24.8688 63.7052 25.0795 64.0802 25.4546C64.4553 25.8296 64.666 26.3383 64.666 26.8688C64.666 27.3992 64.4553 27.9079 64.0802 28.283C63.7052 28.6581 63.1964 28.8688 62.666 28.8688Z"
+                fill="white"
+              />
+              <path
+                d="M66.666 34.8688H30.666C30.1356 34.8688 29.6269 34.6581 29.2518 34.283C28.8767 33.9079 28.666 33.3992 28.666 32.8688C28.666 32.3383 28.8767 31.8296 29.2518 31.4546C29.6269 31.0795 30.1356 30.8688 30.666 30.8688H66.666C67.1964 30.8688 67.7052 31.0795 68.0802 31.4546C68.4553 31.8296 68.666 32.3383 68.666 32.8688C68.666 33.3992 68.4553 33.9079 68.0802 34.283C67.7052 34.6581 67.1964 34.8688 66.666 34.8688Z"
+                fill="white"
+              />
+              <path
+                d="M69.0573 72.8688H28.2748C26.7877 72.8671 25.3621 72.2757 24.3106 71.2242C23.2591 70.1727 22.6677 68.7471 22.666 67.26V42.4775C22.6677 40.9905 23.2591 39.5649 24.3106 38.5134C25.3621 37.4619 26.7877 36.8704 28.2748 36.8688H69.0573C70.5443 36.8704 71.9699 37.4619 73.0214 38.5134C74.0729 39.5649 74.6644 40.9905 74.666 42.4775V67.26C74.6644 68.7471 74.0729 70.1727 73.0214 71.2242C71.9699 72.2757 70.5443 72.8671 69.0573 72.8688V72.8688Z"
+                fill="white"
+              />
+              <rect
+                x="2.66602"
+                y="2.86877"
+                width="102"
+                height="102"
+                rx="51"
+                stroke="#2563EB"
+                stroke-width="2"
+                stroke-dasharray="8 4"
+              />
+            </svg>
+            <h2 class="feature-title">Risus morbi</h2>
+            <p class="feature-text">
+              Euismod sed pellentesque ut elementum. Accumsan gravida turpis ac at. Ullamcorper vitae non est elit odio
+              at augue
+              consequat.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Essential tools -->
+      <section class="essential-tools">
+        <div class="container">
+          <div>
+            <div class="essential-tools-header">
+              <h2 class="essential-tools-title">
+                All the essential tools
+              </h2>
+              <p>
+                Odio vulputate cras vel lacinia turpis volutpat adipiscing. Sollicitudin at velit, blandit tempus nunc
+                in.
+              </p>
+            </div>
+
+            <div class="essential-item">
+              <img
+                src="https://placehold.co/400x600"
+                alt="All the essential tools"
+              >
+              <ul class="essential-features">
+                <li class="active">
+                  <h3>Sem augue tempus</h3>
+                  <p>
+                    Venenatis blandit habitasse nunc, sapien enim elit in. Arcu, pharetra, et cursus sit senectus in
+                    blandit. Aliquet enim
+                    fermentum non semper nibh ut neque. Pellentesque ut tincidunt vitae arcu bibendum malesuada lorem
+                    sapien volutpat.
+                  </p>
+                </li>
+                <li>
+                  <h3>Habitant integer interdum a</h3>
+                </li>
+                <li>
+                  <h3>Tempus natoque id</h3>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <div class="essential-tools-header">
+              <h2 class="essential-tools-title">
+                Focus on what matters
+              </h2>
+              <p>
+                Eget at purus mauris euismod metus vitae eget. Diam massa venenatis pellentesque facilisis nunc, varius.
+              </p>
+            </div>
+
+            <div class="essential-item">
+              <img
+                src="https://placehold.co/400x600"
+                alt="All the essential tools"
+              >
+              <ul class="essential-features">
+                <li class="active">
+                  <h3>Bibendum gravida dolor egestas aliquam</h3>
+                  <p>
+                    Egestas tincidunt hendrerit nibh platea sit vivamus aenean rhoncus etiam. Tristique amet, sed ac ac
+                    dolor habitant.
+                    Mauris duis neque molestie venenatis nibh hendrerit pharetra. Tortor suscipit leo sit tellus ac
+                    scelerisque gravida sem.
+                  </p>
+                </li>
+                <li>
+                  <h3>Egestas lorem eget</h3>
+                </li>
+                <li>
+                  <h3>Tellus eget eugiat sit</h3>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <a href="#">
+            Get Started
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="./main.js"
+      type="module"
+    ></script>
+  </body>
+
+</html>
