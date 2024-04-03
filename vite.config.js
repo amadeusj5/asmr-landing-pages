@@ -3,6 +3,7 @@ import { resolve } from 'path'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
+  base: '/asmr-landing-pages/',
   build: {
     rollupOptions: {
       input: {
